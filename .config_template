@@ -1,0 +1,6 @@
+{
+    "module_name": "creator_common_core",
+    "path": {
+        "data": "./project/data/creator_common_core"
+    }
+}
