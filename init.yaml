@@ -1,4 +1,8 @@
 version: 0.0.1
 folder_path: cores/creator_common_core
 type: core
-requirements: []
+repo_url: https://github.com/AI-Driven-Highspeed-Development/creator_common_core.git
+requirements:
+  - https://github.com/AI-Driven-Highspeed-Development/github_api_core.git
+  - https://github.com/AI-Driven-Highspeed-Development/exceptions_core.git
+  - https://github.com/AI-Driven-Highspeed-Development/modules_controller_core.git
