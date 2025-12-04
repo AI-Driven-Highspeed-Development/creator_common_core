@@ -109,3 +109,16 @@ def list_templates(template_dict: dict) -> list[TemplateInfo]:
     return out
 
 __all__ += ["TemplateInfo", "list_templates"]
+
+
+# ---------------- String utilities ----------------
+
+import re
+
+def to_snake_case(value: str) -> str:
+    """Convert a string to snake_case, removing non-alphanumeric characters."""
+    cleaned = re.sub(r"[^0-9a-zA-Z]+", "_", value.strip())
+    cleaned = re.sub(r"_+", "_", cleaned).strip("_")
+    return cleaned.lower() or "unnamed"
+
+__all__ += ["to_snake_case"]
