@@ -38,16 +38,20 @@ def clone_template(api: GithubApi, template_url: str, target: Path) -> Path:
 
 
 def create_remote_repo(
-    api: GithubApi,
     repo_name: str,
     local_path: Path,
     options: RepoCreationOptions,
     logger,
 ) -> None:
-    """Create a remote repository and push the initial commit."""
+    """Create a remote repository and push the initial commit.
+    
+    Creates a GithubApi instance internally to handle the remote repo creation.
+    """
     if not options:
         return
 
+    api = GithubApi()
+    
     try:
         # Sanitize repo name using the same rules as GithubApi helpers
         sanitized_repo_name = GithubApi.sanitize_repo_name(repo_name)
