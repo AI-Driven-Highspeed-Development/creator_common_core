@@ -1,0 +1,30 @@
+[project]
+name = "creator-common-core"
+version = "0.0.1"
+description = "ADHD Framework core: creator_common_core"
+requires-python = ">=3.11"
+dependencies = [
+    "exceptions-core",
+    "github-api-core",
+]
+
+[project.urls]
+Repository = "https://github.com/AI-Driven-Highspeed-Development/creator_common_core.git"
+
+[tool.adhd]
+type = "core"
+layer = "dev"
+
+[tool.uv.sources]
+exceptions-core = { workspace = true }
+github-api-core = { workspace = true }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+
+[tool.hatch.build]
+dev-mode-dirs = [".."]

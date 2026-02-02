@@ -5,8 +5,8 @@ from pathlib import Path
 from typing import Optional
 import shutil
 
-from cores.github_api_core.api import GithubApi
-from cores.exceptions_core.adhd_exceptions import ADHDError
+from github_api_core import GithubApi
+from exceptions_core import ADHDError
 
 
 @dataclass
