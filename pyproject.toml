@@ -12,12 +12,7 @@ dependencies = [
 Repository = "https://github.com/AI-Driven-Highspeed-Development/creator_common_core.git"
 
 [tool.adhd]
-type = "core"
 layer = "dev"
-
-[tool.uv.sources]
-exceptions-core = { git = "https://github.com/AI-Driven-Highspeed-Development/exceptions_core.git" }
-github-api-core = { git = "https://github.com/AI-Driven-Highspeed-Development/github_api_core.git" }
 
 [build-system]
 requires = ["hatchling"]
