@@ -1,6 +1,6 @@
 """creator_common_core - Common utilities for project/module creation.
 
-Provides RepoCreationOptions and helper functions for template handling.
+Provides RepoCreationOptions, QuestionaryCore, and helper functions for template handling.
 """
 
 from .creator_common_core import (
@@ -11,6 +11,7 @@ from .creator_common_core import (
     clone_template,
     create_remote_repo,
     to_snake_case,
+    QuestionaryCore,
 )
 
 __all__ = [
@@ -21,4 +22,5 @@ __all__ = [
     "clone_template",
     "create_remote_repo",
     "to_snake_case",
+    "QuestionaryCore",
 ]

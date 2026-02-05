@@ -6,6 +6,7 @@ requires-python = ">=3.11"
 dependencies = [
     "exceptions-core",
     "github-api-core",
+    "questionary>=2.0",
 ]
 
 [project.urls]
